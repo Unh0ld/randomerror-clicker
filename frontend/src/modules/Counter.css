@@ -1,0 +1,67 @@
+.hack-button {
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.hack-button:hover {
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+.hack-button:active {
+    background-color: forestgreen;
+}
+
+.hire-button {
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.hire-button:hover {
+    background-color: darkblue;
+    cursor: pointer;
+}
+
+.hire-button:active {
+    background-color: navy;
+}
+
+.fire-button {
+    background-color: red;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.fire-button:hover {
+    background-color: darkred;
+    cursor: pointer;
+}
+
+.fire-button:active {
+    background-color: maroon;
+}
+
+.reset-button {
+    background-color: gray;
+    color: white;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.reset-button:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.reset-button:active {
+    background-color: gray;
+}

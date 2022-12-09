@@ -26,7 +26,7 @@ function Counter() {
 
     return (
         <div>
-            <div>Devices hacked: {hacks}</div>
+            <div id="hacks">Devices hacked: {hacks}</div>
             <button className="hack-button" onClick={() => setCounter(hacks + 1)}>Hack 🖧</button>
             <div>Hackers: {increment}</div>
             <button className="hire-button" onClick={() => setIncrement(prevIncrement => prevIncrement + 1)}>Hire 🧑‍💻</button>

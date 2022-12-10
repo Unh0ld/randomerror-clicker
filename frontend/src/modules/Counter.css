@@ -1,9 +1,14 @@
 .hack-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: green;
-    color: white;
+    color: lightgray;
     font-size: 14px;
-    padding: 10px 15px;
-    border-radius: 5px;
+    padding: .25em 1em;
+    border: 0;
+    transform: skewX(-2deg);
+    box-shadow: 5px 0px black inset, -5px 0px black inset;
 }
 
 .hack-button:hover {
@@ -13,6 +18,29 @@
 
 .hack-button:active {
     background-color: forestgreen;
+}
+
+.hack-button hr {
+    width: 8em;
+    margin: 0.1em 0;
+    padding: .03rem;
+    border: 0;
+    background-image: repeating-linear-gradient(to right, forestgreen 0%, forestgreen 80%, transparent 80%, transparent 100%);
+    background-position: left top;
+    background-repeat: repeat-x;
+    background-size: 33.5% 3px;
+}
+
+.hack-button .icon {
+    font-size: 30pt;
+}
+
+.tools {
+    display: flex;
+    align-items: stretch;
+    gap: .25em;
+    min-width: 500px;
+    margin-bottom: 4em;
 }
 
 .hire-button {
@@ -64,4 +92,35 @@
 
 .reset-button:active {
     background-color: gray;
+}
+
+#hack-box {
+    flex-grow: 2;
+    font-family: HackerFont;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    color: green;
+    background-color: black;
+    padding: .25em .25em;
+    transform: skewX(-2deg);
+    box-shadow: 3px 3px 5px 5px rgb(0, 53, 0);
+}
+
+#hack-box #hack-box-label {
+    align-self: flex-start;
+    font-size: 0.5em;
+}
+
+#hack-box #hack-box-value {
+    align-self: flex-end;
+    font-size: 2em;
+    margin-right: .25em;
+}
+
+#hack-box hr {
+    flex-grow: 1;
+    width: 100%;
+    color: green;
+    margin: 0.1em 0;
 }

@@ -5,14 +5,13 @@ import { act } from "react-dom/test-utils";
 test('increase hacks by one', () => {
     // Given
     render(<Counter />);
-    let hacks = screen.getByText(/Devices hacked: 0/i);
+    let hacks = screen.getByTestId("hacks");
     expect(hacks).toBeInTheDocument();
     // When
-    const button = screen.getByText(/^Hack /i);
+    const button = screen.getByText(/^Hack$/i);
     act(() => {
         button.dispatchEvent(new MouseEvent("click", { bubbles: true })); // 
     });
     // Then
-    hacks = screen.getByText(/Devices hacked: 1/i);
-    expect(hacks).toBeInTheDocument();
+    expect(hacks.innerHTML).toBe("1");
 });

@@ -26,8 +26,20 @@ function Counter() {
 
     return (
         <div>
-            <div id="hacks">Devices hacked: {hacks}</div>
-            <button className="hack-button" onClick={() => setCounter(hacks + 1)}>Hack 🖧</button>
+            <div className="tools">
+                <div id="hack-box">
+                    <div id="hack-box-label">Devices hacked:</div>
+                    <hr></hr>
+                    <div id="hack-box-value" data-testid="hacks">{hacks}</div>
+                    <hr></hr>
+                </div>
+                <button className="hack-button" onClick={() => setCounter(hacks + 1)}>
+                    <hr></hr>
+                    <div className="label">Hack</div>
+                    <div className="icon">🖧</div>
+                    <hr></hr>
+                </button>
+            </div>
             <div>Hackers: {increment}</div>
             <button className="hire-button" onClick={() => setIncrement(prevIncrement => prevIncrement + 1)}>Hire 🧑‍💻</button>
             <button className="fire-button"
